@@ -186,6 +186,10 @@
     grid-template-columns: 1fr;
   }
 
+  .main-content {
+    overflow-x: hidden;
+  }
+
   .gallery-img {
     width: 100%;
     max-width: 100%;
