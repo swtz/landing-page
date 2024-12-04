@@ -181,7 +181,7 @@
   border: 0.1rem solid var(--primary-color);
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .intro-content, .grid {
     grid-template-columns: 1fr;
   }
@@ -256,5 +256,47 @@
 
   .menu-spacing {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1, h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .grid h3 {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .grid h3::before {
+    font-size: 6rem;
+  }
+
+  .grid-description {
+    padding-bottom: 2.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem 1.5;
+    width: 95%;
+    font-size: 1.5rem;
+    outline: none;
+  }
+
+  .form-group button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
   }
 }
