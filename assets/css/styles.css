@@ -284,7 +284,7 @@ p {
 	right: 3rem;
 	opacity: 0;
 	bottom: -5rem;
-	padding: 2rem;
+	padding: 4rem;
 	animation: fade-up 1000ms forwards;
 	animation-delay: 1000ms;
 }
@@ -298,7 +298,7 @@ p {
 
 .whatsapp-btn-container .whatsapp-btn {
 	font-size: 4.8rem;
-	color: #25d366;
+	color: #075e54;
 	display: inline-block;
 	transition: all 400ms;
 }
@@ -314,8 +314,8 @@ p {
 
 .whatsapp-btn-container span {
 	position: absolute;
-	top: 1rem;
-	left: 0.4rem;
+	top: 0rem;
+	left: 3rem;
 	font-family: "Roboto", sans-serif;
 	font-weight: bold;
 	color: #075e54;
@@ -327,4 +327,14 @@ p {
 .whatsapp-btn-container .whatsapp-btn:hover + span {
 	transform: rotateZ(0deg) translateX(0rem);
 	opacity: 1;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.2rem;
+	background: #075e54;
 }
