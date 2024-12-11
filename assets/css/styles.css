@@ -278,3 +278,53 @@ p {
 #about .intro-content {
 	top: 4rem;
 }
+
+.whatsapp-btn-container {
+	position: fixed;
+	right: 3rem;
+	opacity: 0;
+	bottom: -5rem;
+	padding: 2rem;
+	animation: fade-up 1000ms forwards;
+	animation-delay: 1000ms;
+}
+
+@keyframes fade-up {
+	100% {
+		bottom: 2.4rem;
+		opacity: 1;
+	}
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+	font-size: 4.8rem;
+	color: #25d366;
+	display: inline-block;
+	transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+	transform: scale(1.2);
+}
+
+.whatsapp-btn i {
+	padding: 3rem;
+	overflow-y: hidden;
+}
+
+.whatsapp-btn-container span {
+	position: absolute;
+	top: 1rem;
+	left: 0.4rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	color: #075e54;
+	transform: rotateZ(20deg) translateX(0.1rem);
+	opacity: 0;
+	transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+	transform: rotateZ(0deg) translateX(0rem);
+	opacity: 1;
+}
