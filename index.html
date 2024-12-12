@@ -17,11 +17,15 @@
 </head>
 
 <body class="main-bg">
+
+	<input id="close-menu" class="close-menu" type="checkbox" aria-label="fechar menu" role="button">
+	<label class="close-menu-label" for="close-menu" title="close menu"></label>
+
 	<aside class="menu white-bg">
 		<div class="main-content menu-content">
-			<h1><a href="#home">Hygi+</a></h1>
+			<h1><a href="#home" onclick="getElementById('close-menu').checked = false;">Hygi+</a></h1>
 			<nav>
-				<ul>
+				<ul onclick="getElementById('close-menu').checked = false;">
 					<li><a href="#servicos">Serviços</a></li>
 					<li><a href="#galeria">Galeria</a></li>
 					<li><a href="#about">Conheça mais</a></li>
@@ -123,7 +127,7 @@
 			<div class="external-video">
 				<iframe src="https://www.youtube.com/embed/ubN51eh6KJQ?si=lED1SwsQ3CajuLsA" title="YouTube video player"
 					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 
