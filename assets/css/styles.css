@@ -24,6 +24,11 @@ body {
 	line-height: 1.5;
 }
 
+body .full-width {
+	width: 100%;
+	flex: 1 1 100%;
+}
+
 a {
 	text-decoration: none;
 }
@@ -147,7 +152,7 @@ p {
 
 .intro-content {
 	position: relative;
-	top: -8rem;
+	top: -4rem;
 	display: grid;
 	grid-template-columns: 1fr 1.5fr;
 	gap: var(--gap);
@@ -155,7 +160,7 @@ p {
 }
 
 .intro-text-content {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .intro-text-content, .intro-img {
@@ -194,6 +199,7 @@ p {
 
 .grid-main-description {
 	padding-bottom: 5rem;
+	font-weight: 500;
 }
 
 .grid {
@@ -324,12 +330,12 @@ p {
 	transition: all 400ms;
 }
 
-.whatsapp-btn-container .whatsapp-btn:hover + span {
+.whatsapp-btn-container .whatsapp-btn:hover+span {
 	transform: rotateZ(0deg) translateX(0rem);
 	opacity: 1;
 }
 
-.whatsapp-btn-container .whatsapp-btn:hover + span:after {
+.whatsapp-btn-container .whatsapp-btn:hover+span:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -337,4 +343,19 @@ p {
 	width: 100%;
 	height: 0.2rem;
 	background: #075e54;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.footer a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+.footer p {
+	margin: 0;
+	padding: 3rem;
 }
