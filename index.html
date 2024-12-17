@@ -1,292 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="assets/css/variables.css">
-  <link rel="stylesheet" href="assets/css/elements.css">
-  <link rel="stylesheet" href="assets/css/classes.css">
-  <link rel="stylesheet" href="assets/css/menu.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HigiClean | Higienização profissional</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 </head>
 
-<body>
+<body class="main-bg">
 
-  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
-  <label class="close-menu-label" for="close-menu" title="close menu"></label>
-  <aside class="menu white-bg">
-    <div class="main-content menu-content">
-      <h1>
-        <a href="#home" onclick="getElementById('close-menu').checked = false;">LOGO</a>
-      </h1>
+	<input id="close-menu" class="close-menu" type="checkbox" aria-label="fechar menu" role="button">
+	<label class="close-menu-label" for="close-menu" title="close menu"></label>
 
-      <nav>
-        <ul onclick="getElementById('close-menu').checked = false;">
-          <li><a href="#intro">intro</a></li>
-          <li><a href="#grid-one">grid-one</a></li>
-          <li><a href="#gallery">gallery</a></li>
-          <li><a href="#grid-two">grid-two</a></li>
-          <li><a href="#work">work</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </aside>
+	<aside class="menu white-bg">
+		<div class="main-content menu-content">
+			<h1><a href="#home" onclick="getElementById('close-menu').checked = false;">Hygi+</a></h1>
+			<nav>
+				<ul onclick="getElementById('close-menu').checked = false;">
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#galeria">Galeria</a></li>
+					<li><a href="#about">Conheça mais</a></li>
+					<li><a href="#localization">Como nos encontrar</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
-  <div class="menu-spacing"></div>
+	<div class="menu-spacing"></div>
 
-  <section id="home" class="intro main-bg section">
-    <div class="main-content intro-content">
-      <div class="intro-text-content">
-        <h2>Docker: acabe com o “na minha máquina funciona”</h2>
-        <p>Faaaaaala Dev! Mayk Brito na área! Se você já ouviu alguém dizendo: “Na minha máquina funciona”, esse artigo
-          é
-          pra você. Bora entender por que, com o Docker, você nunca mais vai precisar justificar que o problema não é o
-          seu
-          código? Vou te mostrar como essa ferramenta incrível é a resposta que todo dev precisa para enfrentar o
-          desafio
-          de
-          ambientes diferentes.</p>
-      </div>
-      <div class="intro-img">
-        <img src="./assets/img/computer-img-optimized.svg" alt="desenho de um computador com balões" />
-      </div>
-    </div>
-  </section>
+	<section id="home" class="section">
+		<div class="main-content intro-content">
+			<div class="intro-text-content">
+				<h2>Hygi Plus Clean</h2>
+				<p>Somos especialistas em higienização e impermeabilização de estofados, trabalhamos com qualidade e
+					responsabilidade para oferecer apenas o melhor serviço.</p>
+			</div>
+			<div class="intro-img">
+				<img src="/assets/img/logo.png" alt="imagem da empresa Hygi Plus Clean">
+			</div>
 
-  <section id="intro" class="white-bg section">
-    <div class="main-content top3-content">
-      <h2>Já tentou rodar seu código em outro ambiente?</h2>
-      <p>
-        Imagina o seguinte: você passa horas configurando tudo certinho, seu app está redondinho na sua máquina, mas
-        quando coloca no servidor… BAM! Nada funciona. Ou pior, o seu colega de equipe tenta rodar e o app simplesmente
-        não abre. Esse é o famoso drama do “funciona aqui, mas não aí”. O Docker chega exatamente para resolver isso.
-      </p>
-      <p>
-        Neste artigo, você vai entender como o Docker trabalha com contêineres, por que ele é a solução ideal para
-        garantir que seu código funcione em qualquer ambiente e como ele pode levar sua carreira para um novo nível de
-        profissionalismo. Bora aprender de vez?
-      </p>
-      <p>
-        Se quiser um mergulho direto sobre o que o Docker pode fazer por você, clica no vídeo aqui embaixo. Nele, eu vou
-        a fundo no conceito de contêineres, na prática e com exemplos bem fáceis de acompanhar. Só dar o play e bora
-        descomplicar!
-      </p>
-    </div>
-  </section>
+		</div>
+	</section>
 
-  <section id="grid-one" class="grid-one main-bg section">
-    <div class="main-content grid-one-content">
-      <h2 class="grid-main-heading">my grid</h2>
-      <p class="grid-description">Uma breve descrição.</p>
-      <div class="grid">
-        <article>
-          <h3>Teste 1</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum amet omnis quos, quibusdam impedit,
-            voluptas
-            minus at quae beatae velit quasi quis pariatur esse numquam, assumenda fuga? Quidem, rerum quo?</p>
-        </article>
-        <article>
-          <h3>Teste 2</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum amet omnis quos, quibusdam impedit,
-            voluptas
-            minus at quae beatae velit quasi quis pariatur esse numquam, assumenda fuga? Quidem, rerum quo?</p>
-        </article>
-        <article>
-          <h3>Teste 3</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum amet omnis quos, quibusdam impedit,
-            voluptas
-            minus at quae beatae velit quasi quis pariatur esse numquam, assumenda fuga? Quidem, rerum quo?</p>
-        </article>
-      </div>
-    </div>
-  </section>
+	<section id="servicos" class="grid-main white-bg section">
+		<div class="main-content grid-main-content">
+			<h2 class="grid-main-heading">serviços</h2>
+			<p class="grid-main-description">Fazemos limpeza de estofados e automóveis.</p>
+			<div class="grid-article">
+				<article>
+					<h3>Limpeza de Automóveis</h3>
+					<p>
+						A limpeza regular do carro reduz a presença de bactérias e fungos, o que pode ajudar a prevenir
+						problemas
+						respiratórios e infecções.
+					</p>
+					<p>
+						A limpeza remove sujeira e resíduos que podem prejudicar os materiais do carro, como bancos,
+						carpetes,
+						painéis e teto. Isso prolonga a vida útil dos componentes e evita o desgaste prematuro.
+					</p>
+				</article>
+				<article>
+					<h3>Limpeza de Estofados</h3>
+					<p>
+						A limpeza evita a formação de odores desagradáveis que podem ser causados por umidade, resíduos
+						de
+						alimentos, micro-organismos ou poluição.
+					</p>
+					<p>
+						A limpeza do motor é fundamental para o bom funcionamento mecânico e elétrico do carro.
+						Impurezas acumuladas
+						no motor podem prejudicar a parte elétrica, enferrujar componentes, ressecar mangueiras e até
+						danificar a
+						bateria.
+					</p>
+				</article>
+			</div>
+		</div>
+	</section>
 
-  <section id="gallery" class="grid-one white-bg section">
-    <div class="main-content grid-one-content">
-      <h2 class="grid-main-heading">Gallery</h2>
-      <p class="grid-description">Uma breve descrição.</p>
-      <div class="grid">
-        <div class="gallery-img">
-          <img src="https://picsum.photos/360/360?random?r=1" alt="imagem obtida aleatoriamente" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://picsum.photos/360/360?random?r=2" alt="imagem obtida aleatoriamente" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://picsum.photos/360/360?random?r=3" alt="imagem obtida aleatoriamente" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://picsum.photos/360/360?random?r=4" alt="imagem obtida aleatoriamente" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://picsum.photos/360/360?random?r=5" alt="imagem obtida aleatoriamente" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://picsum.photos/360/360?random?r=6" alt="imagem obtida aleatoriamente" />
-        </div>
-      </div>
-    </div>
-  </section>
+	<section id="galeria" class="grid-main section">
+		<div class="main-content grid-main-content">
+			<h2 class="grid-main-heading">galeria</h2>
+			<p class="grid-main-description">a short description</p>
+			<div class="grid">
+				<div class="gallery-img">
+					<img src="/assets/img/img01.png" alt="">
+				</div>
+				<div class="gallery-img">
+					<img src="/assets/img/img02.png" alt="">
+				</div>
+				<div class="gallery-img">
+					<img src="/assets/img/img03.png" alt="">
+				</div>
+				<div class="gallery-img">
+					<img src="/assets/img/img04.png" alt="">
+				</div>
+				<div class="gallery-img">
+					<img src="/assets/img/img05.png" alt="">
+				</div>
+				<div class="gallery-img">
+					<img src="/assets/img/img06.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <section id="grid-two" class="grid-one main-bg section">
-    <div class="main-content grid-one-content">
-      <h2 class="grid-main-heading">my grid</h2>
-      <p class="grid-description">Uma breve descrição.</p>
-      <div class="grid">
-        <article>
-          <h3>Teste 1</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum amet omnis quos, quibusdam impedit,
-            voluptas
-            minus at quae beatae velit quasi quis pariatur esse numquam, assumenda fuga? Quidem, rerum quo?</p>
-        </article>
-        <article>
-          <h3>Teste 2</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum amet omnis quos, quibusdam impedit,
-            voluptas
-            minus at quae beatae velit quasi quis pariatur esse numquam, assumenda fuga? Quidem, rerum quo?</p>
-        </article>
-        <article>
-          <h3>Teste 3</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum amet omnis quos, quibusdam impedit,
-            voluptas
-            minus at quae beatae velit quasi quis pariatur esse numquam, assumenda fuga? Quidem, rerum quo?</p>
-        </article>
-      </div>
-    </div>
-  </section>
+	<section id="about" class="white-bg section">
+		<div class="main-content intro-content">
+			<div class="intro-text-content">
+				<h2>Hygi Plus Clean</h2>
+				<p>Confira ao lado nosso vídeo mostrando um pouquinho mais do nosso trabalho e o cuidado que temos com
+					seus
+					pertences &#8658;</p>
+			</div>
+			<div class="external-video">
+				<iframe src="https://www.youtube.com/embed/ubN51eh6KJQ?si=lED1SwsQ3CajuLsA" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
 
-  <section id="work" class="white-bg section">
-    <div class="main-content top3-content">
-      <h2>Já tentou rodar seu código em outro ambiente?</h2>
-      <p>
-        Imagina o seguinte: você passa horas configurando tudo certinho, seu app está redondinho na sua máquina, mas
-        quando coloca no servidor… BAM! Nada funciona. Ou pior, o seu colega de equipe tenta rodar e o app simplesmente
-        não abre. Esse é o famoso drama do “funciona aqui, mas não aí”. O Docker chega exatamente para resolver isso.
-      </p>
-      <p>
-        Neste artigo, você vai entender como o Docker trabalha com contêineres, por que ele é a solução ideal para
-        garantir que seu código funcione em qualquer ambiente e como ele pode levar sua carreira para um novo nível de
-        profissionalismo. Bora aprender de vez?
-      </p>
+		</div>
+	</section>
 
-      <div class="responsive-table">
-        <table>
-          <caption>Pricing table</caption>
-          <thead>
-            <tr>
-              <th>Title 1</th>
-              <th>Title 2</th>
-              <th>Title 3</th>
-              <th>Title 4</th>
-              <th>Title 5</th>
-              <th>Title 6</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Content 1</td>
-              <td>Content 2</td>
-              <td>Content 3</td>
-              <td>Content 4</td>
-              <td>Content 5</td>
-              <td>Content 6</td>
-            </tr>
-            <tr>
-              <td>Content 1</td>
-              <td>Content 2</td>
-              <td>Content 3</td>
-              <td>Content 4</td>
-              <td>Content 5</td>
-              <td>Content 6</td>
-            </tr>
-            <tr>
-              <td>Content 1</td>
-              <td>Content 2</td>
-              <td>Content 3</td>
-              <td>Content 4</td>
-              <td>Content 5</td>
-              <td>Content 6</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>Testando</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-    </div>
-  </section>
+	<section id="localization" class="main-bg section">
+		<div class="main-content about-content localization">
+			<h4>Abra o mapa interativo no seu celular para definir uma rota até aqui!</h4>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d299.5511023502753!2d-49.582622966677924!3d-29.14874705178709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1733855691909!5m2!1spt-BR!2sbr"
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
 
-  <section id="contact" class="intro main-bg section">
-    <div class="main-content intro-content">
-      <div class="intro-text-content">
-        <h2>Docker: acabe com o “na minha máquina funciona”</h2>
-        <p>Faaaaaala Dev! Mayk Brito na área! Se você já ouviu alguém dizendo: “Na minha máquina funciona”, esse artigo
-          é
-          pra você. Bora entender por que, com o Docker, você nunca mais vai precisar justificar que o problema não é o
-          seu
-          código? Vou te mostrar como essa ferramenta incrível é a resposta que todo dev precisa para enfrentar o
-          desafio
-          de
-          ambientes diferentes.</p>
-      </div>
-      <div class="intro-img">
-        <img src="./assets/img/contact-img-optmz.svg" alt="desenho de um computador com balões" />
-      </div>
-      <div class="contact-form">
-        <fieldset class="form-grid">
-          <legend>Contact me</legend>
+	<footer id="footer" class="footer white-bg">
+		<p><a rel="nofollow" target="_blank" href="https://github.com/swtz">Feito com ❤️ por L.Lüders</a></p>
+	</footer>
 
-          <div class="form-group">
-            <label for="first-name">First name</label>
-            <input type="text" name="first-name" id="first-name" placeholder="Your name">
-          </div>
-
-          <div class="form-group">
-            <label for="last-name">Last name</label>
-            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Your e-mail">
-          </div>
-
-          <div class="form-group full-width">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-          </div>
-
-          <div class="form-group full-width">
-            <button type="submit">Send message</button>
-          </div>
-
-        </fieldset>
-      </div>
-    </div>
-  </section>
-
-  <footer id="footer" class="footer white-bg">
-    <p><a rel="nofollow" target="_blank" href="https://github.com/swtz">Feito com ❤️ por L.Lüders</a></p>
-  </footer>
-
-
-  <a class="back-to-top" href="#">&#10224;</a>
-
+	<div class="whatsapp-btn-container">
+		<a class="whatsapp-btn"
+			href="https://wa.me/5548996642905?text=Olá,%20tudo%20bem?%20Acessei%20o%20site%20de%20vocês%20e%20me%20interessei%20pelos%20serviços%20que%20vocês%20fazem.%20Gostaria%20de%20saber%20mais,%20por%20favor.%20"
+			target="_blank" rel="nofollow">
+			<i class="fa-brands fa-square-whatsapp fa-lg"></i>
+		</a>
+		<span>Fale conosco</span>
+	</div>
 </body>
 
 </html>
